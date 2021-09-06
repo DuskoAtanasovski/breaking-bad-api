@@ -49,8 +49,8 @@ public class DeathsServiceImpl implements DeathsService {
         }
     }
 
-    private DeathsDto mapFromDeathsToDto(Deaths deathsDto) {
-        DeathsDto deaths = new DeathsDto();
+    private DeathsDto mapFromDeathsToDto(Deaths deaths) {
+        DeathsDto deathsDto = new DeathsDto();
         deathsDto.setDeathId(deaths.getDeathId());
         deathsDto.setDeath(deaths.getDeath());
         deathsDto.setCause(deaths.getCause());
@@ -61,6 +61,6 @@ public class DeathsServiceImpl implements DeathsService {
         deathsDto.setNumberOfDeaths(deaths.getNumberOfDeaths());
 
 
-        return deaths;
+        return deathsDto;
     }
 }
