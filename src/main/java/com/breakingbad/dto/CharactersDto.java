@@ -2,10 +2,7 @@ package com.breakingbad.dto;
 
 import lombok.Data;
 
-import javax.persistence.Lob;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 public class CharactersDto implements Serializable {

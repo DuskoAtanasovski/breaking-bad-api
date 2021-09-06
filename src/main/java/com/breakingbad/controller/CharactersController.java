@@ -1,7 +1,6 @@
 package com.breakingbad.controller;
 
 import com.breakingbad.dto.CharactersDto;
-import com.breakingbad.model.Characters;
 import com.breakingbad.service.CharactersService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
