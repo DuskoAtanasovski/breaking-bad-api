@@ -16,12 +16,12 @@ public class CharactersController {
 
     private final CharactersService charactersService;
 
-    @GetMapping("all")
+    @GetMapping("characters/all")
     public List<CharactersDto> getAll(){
        return charactersService.getAllCharacters();
     }
 
-    @GetMapping("save")
+    @GetMapping("characters/save")
     public void saveCharacters() {
         charactersService.saveCharacters();
     }
