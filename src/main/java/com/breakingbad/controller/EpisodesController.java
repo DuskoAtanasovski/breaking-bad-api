@@ -3,6 +3,8 @@ package com.breakingbad.controller;
 import com.breakingbad.dto.EpisodesDto;
 import com.breakingbad.service.EpisodesService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +24,8 @@ public class EpisodesController {
     }
 
     @GetMapping("episodes/save")
-    public void saveEpisodes() {
+    public ResponseEntity saveEpisodes() {
         episodesService.saveEpisodes();
+        return new ResponseEntity("Success", HttpStatus.OK);
     }
 }
