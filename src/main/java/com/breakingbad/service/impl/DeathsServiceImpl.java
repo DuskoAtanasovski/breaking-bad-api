@@ -11,6 +11,7 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -22,7 +23,8 @@ public class DeathsServiceImpl implements DeathsService {
 
     @Override
     public List<DeathsDto> getAllDeaths() {
-        return null;
+        List<Deaths> deathsList = deathsRepository.findAll();
+        return deathsList.stream().map(this::mapFromDeathsToDto).collect(Collectors.toList());
     }
 
     @Override
@@ -47,7 +49,7 @@ public class DeathsServiceImpl implements DeathsService {
         }
     }
 
-    private DeathsDto mapFromDeathsToDto(Deaths deathsDto){
+    private DeathsDto mapFromDeathsToDto(Deaths deathsDto) {
         DeathsDto deaths = new DeathsDto();
         deathsDto.setDeathId(deaths.getDeathId());
         deathsDto.setDeath(deaths.getDeath());
@@ -59,6 +61,6 @@ public class DeathsServiceImpl implements DeathsService {
         deathsDto.setNumberOfDeaths(deaths.getNumberOfDeaths());
 
 
-        return  deaths;
+        return deaths;
     }
 }
