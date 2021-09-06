@@ -44,6 +44,7 @@ public class EpisodesServiceImpl implements EpisodesService {
                 episodes.setTitle(episodesDto.getTitle());
                 episodes.setSeason(episodesDto.getSeason());
                 episodes.setAirDate(episodesDto.getAirDate());
+                episodes.setCharacters(episodesDto.getCharacters());
                 episodes.setEpisode(episodesDto.getEpisode());
                 episodes.setSeries(episodesDto.getSeries());
                 episodesRepository.save(episodes);
@@ -59,6 +60,7 @@ public class EpisodesServiceImpl implements EpisodesService {
         episodesDto.setTitle(episodes.getTitle());
         episodesDto.setSeason(episodes.getSeason());
         episodesDto.setAirDate(episodes.getAirDate());
+        episodesDto.setCharacters(episodes.getCharacters());
         episodesDto.setEpisode(episodes.getEpisode());
         episodesDto.setSeries(episodes.getSeries());
 

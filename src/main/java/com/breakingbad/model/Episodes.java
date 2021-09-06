@@ -21,7 +21,7 @@ public class Episodes {
     private String title;
     private Integer season;
     private String airDate;
-//    private List<String> characters;
+    private String[] characters;
     private Integer episode;
     private String series;
 

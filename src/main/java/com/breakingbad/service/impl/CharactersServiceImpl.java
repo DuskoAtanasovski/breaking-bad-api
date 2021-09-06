@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -43,8 +44,10 @@ public class CharactersServiceImpl implements CharactersService {
                 characters.setCharacterId(charactersDto.getCharacterId());
                 characters.setName(charactersDto.getName());
                 characters.setBirthday(charactersDto.getBirthday());
+                characters.setOccupation(charactersDto.getOccupation());
                 characters.setImage(charactersDto.getImage());
                 characters.setNickname(charactersDto.getNickname());
+                characters.setAppearance(charactersDto.getAppearance());
                 characters.setPortrayed(charactersDto.getPortrayed());
                 charactersRepository.save(characters);
             }
@@ -58,8 +61,10 @@ public class CharactersServiceImpl implements CharactersService {
         charactersDto.setCharacterId(characters.getCharacterId());
         charactersDto.setName(characters.getName());
         charactersDto.setBirthday(characters.getBirthday());
+        charactersDto.setOccupation(characters.getOccupation());
         charactersDto.setImage(characters.getImage());
         charactersDto.setNickname(characters.getNickname());
+        charactersDto.setAppearance(characters.getAppearance());
         charactersDto.setPortrayed(characters.getPortrayed());
 
         return charactersDto;
