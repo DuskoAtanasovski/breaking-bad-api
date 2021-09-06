@@ -3,7 +3,7 @@
     "episodeId": 1,
     "title": "Pilot",
     "season": "1",
-    "air_date": "01-20-2008",
+    "airDate": "01-20-2008",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -21,7 +21,7 @@
     "episodeId": 2,
     "title": "Cat's in the Bag...",
     "season": "1",
-    "air_date": "01-27-2008",
+    "airDate": "01-27-2008",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -36,7 +36,7 @@
     "episodeId": 3,
     "title": "...And the Bag's in the River",
     "season": "1",
-    "air_date": "02-10-2008",
+    "airDate": "02-10-2008",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -54,7 +54,7 @@
     "episodeId": 4,
     "title": "Cancer Man",
     "season": "1",
-    "air_date": "02-17-2008",
+    "airDate": "02-17-2008",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -71,7 +71,7 @@
     "episodeId": 5,
     "title": "Gray Matter",
     "season": "1",
-    "air_date": "02-24-2008",
+    "airDate": "02-24-2008",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -90,7 +90,7 @@
     "episodeId": 6,
     "title": "Crazy Handful of Nothin",
     "season": "1",
-    "air_date": "03-02-2008",
+    "airDate": "03-02-2008",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -107,7 +107,7 @@
     "episodeId": 7,
     "title": "A No-Rough-Stuff-Type Deal",
     "season": " 1",
-    "air_date": "03-09-2008",
+    "airDate": "03-09-2008",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -124,7 +124,7 @@
     "episodeId": 8,
     "title": "Seven-Thirty-Seven",
     "season": "2",
-    "air_date": "03-08-2009",
+    "airDate": "03-08-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -141,7 +141,7 @@
     "episodeId": 9,
     "title": "Grilled",
     "season": "2",
-    "air_date": "03-15-2009",
+    "airDate": "03-15-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -159,7 +159,7 @@
     "episodeId": 10,
     "title": "Bit by a Dead Bee",
     "season": "2",
-    "air_date": "03-22-2009",
+    "airDate": "03-22-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -176,7 +176,7 @@
     "episodeId": 11,
     "title": "Down",
     "season": "2",
-    "air_date": "03-29-2009",
+    "airDate": "03-29-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -190,7 +190,7 @@
     "episodeId": 12,
     "title": "Breakage",
     "season": "2",
-    "air_date": "04-05-2009",
+    "airDate": "04-05-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -208,7 +208,7 @@
     "episodeId": 13,
     "title": "Peekaboo",
     "season": "2",
-    "air_date": "04-12-2009",
+    "airDate": "04-12-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -224,7 +224,7 @@
     "episodeId": 14,
     "title": "Negro y Azul",
     "season": "2",
-    "air_date": "04-19-2009",
+    "airDate": "04-19-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -243,7 +243,7 @@
     "episodeId": 15,
     "title": "Better Call Saul",
     "season": "2",
-    "air_date": "04-26-2009",
+    "airDate": "04-26-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -261,7 +261,7 @@
     "episodeId": 16,
     "title": "4 Days Out",
     "season": "2",
-    "air_date": "05-03-2009",
+    "airDate": "05-03-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -279,7 +279,7 @@
     "episodeId": 17,
     "title": "Over",
     "season": "2",
-    "air_date": "05-10-2009",
+    "airDate": "05-10-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -297,7 +297,7 @@
     "episodeId": 18,
     "title": "Mandala",
     "season": "2",
-    "air_date": "05-17-2009",
+    "airDate": "05-17-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -316,7 +316,7 @@
     "episodeId": 19,
     "title": "Phoenix",
     "season": "2",
-    "air_date": "05-24-2009",
+    "airDate": "05-24-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -336,7 +336,7 @@
     "episodeId": 20,
     "title": "ABQ",
     "season": "2",
-    "air_date": "05-31-2009",
+    "airDate": "05-31-2009",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -356,7 +356,7 @@
     "episodeId": 21,
     "title": "No Más",
     "season": "3",
-    "air_date": "03-21-2010",
+    "airDate": "03-21-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -374,7 +374,7 @@
     "episodeId": 22,
     "title": "Caballo sin Nombre",
     "season": "3",
-    "air_date": "03-28-2010",
+    "airDate": "03-28-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -394,7 +394,7 @@
     "episodeId": 23,
     "title": "IFT",
     "season": "3",
-    "air_date": "04-04-2010",
+    "airDate": "04-04-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -413,7 +413,7 @@
     "episodeId": 24,
     "title": "Green Light",
     "season": "3",
-    "air_date": "04-11-2010",
+    "airDate": "04-11-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -433,7 +433,7 @@
     "episodeId": 25,
     "title": "Más",
     "season": "3",
-    "air_date": "04-18-2010",
+    "airDate": "04-18-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -452,7 +452,7 @@
     "episodeId": 26,
     "title": "Sunset",
     "season": "3",
-    "air_date": "04-25-2010",
+    "airDate": "04-25-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -472,7 +472,7 @@
     "episodeId": 27,
     "title": "One Minute",
     "season": "3",
-    "air_date": "05-02-2010",
+    "airDate": "05-02-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -491,7 +491,7 @@
     "episodeId": 28,
     "title": "I See You",
     "season": "3",
-    "air_date": "05-09-2010",
+    "airDate": "05-09-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -509,7 +509,7 @@
     "episodeId": 29,
     "title": "Kafkaesque",
     "season": "3",
-    "air_date": "05-16-2010",
+    "airDate": "05-16-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -528,7 +528,7 @@
     "episodeId": 30,
     "title": "Fly",
     "season": "3",
-    "air_date": "05-23-2010",
+    "airDate": "05-23-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -541,7 +541,7 @@
     "episodeId": 31,
     "title": "Abiquiu",
     "season": "3",
-    "air_date": "05-30-2010",
+    "airDate": "05-30-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -560,7 +560,7 @@
     "episodeId": 32,
     "title": "Half measures",
     "season": "3",
-    "air_date": "06-06-2010",
+    "airDate": "06-06-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -581,7 +581,7 @@
     "episodeId": 33,
     "title": "Full Measure",
     "season": "3",
-    "air_date": "06-13-2010",
+    "airDate": "06-13-2010",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -600,7 +600,7 @@
     "episodeId": 34,
     "title": "Box Cutter",
     "season": "4",
-    "air_date": "07-17-2011",
+    "airDate": "07-17-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -621,7 +621,7 @@
     "episodeId": 35,
     "title": "Thirty-Eight Snub",
     "season": "4",
-    "air_date": "07-24-2011",
+    "airDate": "07-24-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -641,7 +641,7 @@
     "episodeId": 36,
     "title": "Open House",
     "season": "4",
-    "air_date": "07-31-2011",
+    "airDate": "07-31-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -658,7 +658,7 @@
     "episodeId": 37,
     "title": "Bullet Points",
     "season": "4",
-    "air_date": "08-07-2011",
+    "airDate": "08-07-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -678,7 +678,7 @@
     "episodeId": 38,
     "title": "Shotgun",
     "season": "4",
-    "air_date": "08-14-2011",
+    "airDate": "08-14-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -696,7 +696,7 @@
     "episodeId": 39,
     "title": "Cornered",
     "season": "4",
-    "air_date": "08-21-2011",
+    "airDate": "08-21-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -713,7 +713,7 @@
     "episodeId": 40,
     "title": "Problem Dog",
     "season": "4",
-    "air_date": "08-28-2011",
+    "airDate": "08-28-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -733,7 +733,7 @@
     "episodeId": 41,
     "title": "Hermanos",
     "season": "4",
-    "air_date": "09-04-2011",
+    "airDate": "09-04-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -754,7 +754,7 @@
     "episodeId": 42,
     "title": "Bug",
     "season": "4",
-    "air_date": "09-11-2011",
+    "airDate": "09-11-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -772,7 +772,7 @@
     "episodeId": 43,
     "title": "Salud",
     "season": "4",
-    "air_date": "09-18-2011",
+    "airDate": "09-18-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -791,7 +791,7 @@
     "episodeId": 44,
     "title": "Crawl Space",
     "season": "4",
-    "air_date": "09-25-2011",
+    "airDate": "09-25-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -813,7 +813,7 @@
     "episodeId": 45,
     "title": "End Times",
     "season": "4",
-    "air_date": "10-02-2011",
+    "airDate": "10-02-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -832,7 +832,7 @@
     "episodeId": 46,
     "title": "Face Off",
     "season": "4",
-    "air_date": "10-09-2011",
+    "airDate": "10-09-2011",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -850,7 +850,7 @@
     "episodeId": 47,
     "title": "Live Free of Die",
     "season": "5",
-    "air_date": "07-15-2012",
+    "airDate": "07-15-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -868,7 +868,7 @@
     "episodeId": 48,
     "title": "Madrigal",
     "season": "5",
-    "air_date": "07-22-2012",
+    "airDate": "07-22-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -886,7 +886,7 @@
     "episodeId": 49,
     "title": "Hazard Pay",
     "season": "5",
-    "air_date": "07-29-2012",
+    "airDate": "07-29-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -906,7 +906,7 @@
     "episodeId": 50,
     "title": "Fifty-One",
     "season": "5",
-    "air_date": "08-05-2012",
+    "airDate": "08-05-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -924,7 +924,7 @@
     "episodeId": 51,
     "title": "Dead Freight",
     "season": "5",
-    "air_date": "08-12-2012",
+    "airDate": "08-12-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -943,7 +943,7 @@
     "episodeId": 52,
     "title": "Buyout",
     "season": "5",
-    "air_date": "08-19-2012",
+    "airDate": "08-19-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -961,7 +961,7 @@
     "episodeId": 53,
     "title": "Say My Name",
     "season": "5",
-    "air_date": "08-26-2012",
+    "airDate": "08-26-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -978,7 +978,7 @@
     "episodeId": 54,
     "title": "Gliding Over All",
     "season": "5",
-    "air_date": "09-02-2012",
+    "airDate": "09-02-2012",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -998,7 +998,7 @@
     "episodeId": 55,
     "title": "Blood Money",
     "season": "5",
-    "air_date": "08-11-2013",
+    "airDate": "08-11-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1018,7 +1018,7 @@
     "episodeId": 56,
     "title": "Buried",
     "season": "5",
-    "air_date": "08-18-2013",
+    "airDate": "08-18-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1037,7 +1037,7 @@
     "episodeId": 57,
     "title": "Confessions",
     "season": "5",
-    "air_date": "08-25-2013",
+    "airDate": "08-25-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1056,7 +1056,7 @@
     "episodeId": 58,
     "title": "Rabid Dog",
     "season": "5",
-    "air_date": "09-01-2013",
+    "airDate": "09-01-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1073,7 +1073,7 @@
     "episodeId": 59,
     "title": "To'hajilee",
     "season": "5",
-    "air_date": "09-08-2013",
+    "airDate": "09-08-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1094,7 +1094,7 @@
     "episodeId": 60,
     "title": "Ozymandias",
     "season": "5",
-    "air_date": "09-15-2013",
+    "airDate": "09-15-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1113,7 +1113,7 @@
     "episodeId": 61,
     "title": "Granite State",
     "season": "5",
-    "air_date": "09-22-2013",
+    "airDate": "09-22-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1134,7 +1134,7 @@
     "episodeId": 62,
     "title": "Felina",
     "season": "5",
-    "air_date": "09-29-2013",
+    "airDate": "09-29-2013",
     "characters": [
       "Walter White",
       "Jesse Pinkman",
@@ -1156,7 +1156,7 @@
     "episodeId": 63,
     "title": "Uno",
     "season": "1",
-    "air_date": "02-08-2015",
+    "airDate": "02-08-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1172,7 +1172,7 @@
     "episodeId": 64,
     "title": "Mijo",
     "season": "1",
-    "air_date": "02-09-2015",
+    "airDate": "02-09-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1189,7 +1189,7 @@
     "episodeId": 65,
     "title": "Nacho",
     "season": "1",
-    "air_date": "02-16-2015",
+    "airDate": "02-16-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1205,7 +1205,7 @@
     "episodeId": 66,
     "title": "Hero",
     "season": "1",
-    "air_date": "02-23-2015",
+    "airDate": "02-23-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1221,7 +1221,7 @@
     "episodeId": 67,
     "title": "Alpine Shepherd Boy",
     "season": "1",
-    "air_date": "03-02-2015",
+    "airDate": "03-02-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1237,7 +1237,7 @@
     "episodeId": 68,
     "title": "Five-O",
     "season": "1",
-    "air_date": "03-09-2015",
+    "airDate": "03-09-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1253,7 +1253,7 @@
     "episodeId": 69,
     "title": "Bingo",
     "season": "1",
-    "air_date": "03-16-2015",
+    "airDate": "03-16-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1269,7 +1269,7 @@
     "episodeId": 70,
     "title": "RICO",
     "season": "1",
-    "air_date": "03-23-2015",
+    "airDate": "03-23-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1285,7 +1285,7 @@
     "episodeId": 71,
     "title": "Pimento",
     "season": "1",
-    "air_date": "03-30-2015",
+    "airDate": "03-30-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1301,7 +1301,7 @@
     "episodeId": 72,
     "title": "Marco",
     "season": "1",
-    "air_date": "04-06-2015",
+    "airDate": "04-06-2015",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1317,7 +1317,7 @@
     "episodeId": 73,
     "title": "Switch",
     "season": "2",
-    "air_date": "02-15-2016",
+    "airDate": "02-15-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1333,7 +1333,7 @@
     "episodeId": 74,
     "title": "Cobbler",
     "season": "2",
-    "air_date": "02-22-2016",
+    "airDate": "02-22-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1349,7 +1349,7 @@
     "episodeId": 75,
     "title": "Amarillo",
     "season": "2",
-    "air_date": "02-29-2016",
+    "airDate": "02-29-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1365,7 +1365,7 @@
     "episodeId": 76,
     "title": "Gloves Off",
     "season": "2",
-    "air_date": "03-07-2016",
+    "airDate": "03-07-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1381,7 +1381,7 @@
     "episodeId": 77,
     "title": "Rebecca",
     "season": "2",
-    "air_date": "03-14-2016",
+    "airDate": "03-14-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1397,7 +1397,7 @@
     "episodeId": 78,
     "title": "Bali Ha'i",
     "season": "2",
-    "air_date": "03-21-2016",
+    "airDate": "03-21-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1413,7 +1413,7 @@
     "episodeId": 79,
     "title": "Inflatable",
     "season": "2",
-    "air_date": "03-28-2016",
+    "airDate": "03-28-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1429,7 +1429,7 @@
     "episodeId": 80,
     "title": "Fifi",
     "season": "2",
-    "air_date": "04-04-2016",
+    "airDate": "04-04-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1445,7 +1445,7 @@
     "episodeId": 81,
     "title": "Nailed",
     "season": "2",
-    "air_date": "04-11-2016",
+    "airDate": "04-11-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1461,7 +1461,7 @@
     "episodeId": 82,
     "title": "Klick",
     "season": "2",
-    "air_date": "04-18-2016",
+    "airDate": "04-18-2016",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1477,7 +1477,7 @@
     "episodeId": 83,
     "title": "Mabel",
     "season": "3",
-    "air_date": "04-10-2017",
+    "airDate": "04-10-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1493,7 +1493,7 @@
     "episodeId": 84,
     "title": "Witness",
     "season": "3",
-    "air_date": "04-17-2017",
+    "airDate": "04-17-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1509,7 +1509,7 @@
     "episodeId": 85,
     "title": "Sunk Costs",
     "season": "3",
-    "air_date": "04-24-2017",
+    "airDate": "04-24-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1525,7 +1525,7 @@
     "episodeId": 86,
     "title": "Sabrosito",
     "season": "3",
-    "air_date": "05-01-2017",
+    "airDate": "05-01-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1541,7 +1541,7 @@
     "episodeId": 87,
     "title": "Chicanery",
     "season": "3",
-    "air_date": "05-08-2017",
+    "airDate": "05-08-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1557,7 +1557,7 @@
     "episodeId": 88,
     "title": "Off Brand",
     "season": "3",
-    "air_date": "05-15-2017",
+    "airDate": "05-15-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1573,7 +1573,7 @@
     "episodeId": 89,
     "title": "Expenses",
     "season": "3",
-    "air_date": "05-22-2017",
+    "airDate": "05-22-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1589,7 +1589,7 @@
     "episodeId": 90,
     "title": "Slip",
     "season": "3",
-    "air_date": "06-05-2017",
+    "airDate": "06-05-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1605,7 +1605,7 @@
     "episodeId": 91,
     "title": "Fall",
     "season": "3",
-    "air_date": "06-12-2017",
+    "airDate": "06-12-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1621,7 +1621,7 @@
     "episodeId": 92,
     "title": "Lantern",
     "season": "3",
-    "air_date": "06-19-2017",
+    "airDate": "06-19-2017",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1637,7 +1637,7 @@
     "episodeId": 93,
     "title": "Smoke",
     "season": "4",
-    "air_date": "08-06-2018",
+    "airDate": "08-06-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1653,7 +1653,7 @@
     "episodeId": 94,
     "title": "Breathe",
     "season": "4",
-    "air_date": "08-13-2018",
+    "airDate": "08-13-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1669,7 +1669,7 @@
     "episodeId": 95,
     "title": "Something Beautiful",
     "season": "4",
-    "air_date": "08-20-2018",
+    "airDate": "08-20-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1685,7 +1685,7 @@
     "episodeId": 96,
     "title": "Talk",
     "season": "4",
-    "air_date": "08-27-2018",
+    "airDate": "08-27-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1701,7 +1701,7 @@
     "episodeId": 97,
     "title": "Quite a Ride",
     "season": "4",
-    "air_date": "09-03-2018",
+    "airDate": "09-03-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1717,7 +1717,7 @@
     "episodeId": 98,
     "title": "Pinata",
     "season": "4",
-    "air_date": "09-10-2018",
+    "airDate": "09-10-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1733,7 +1733,7 @@
     "episodeId": 99,
     "title": "Something Stupid",
     "season": "4",
-    "air_date": "09-17-2018",
+    "airDate": "09-17-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1749,7 +1749,7 @@
     "episodeId": 100,
     "title": "Coushatta",
     "season": "4",
-    "air_date": "09-24-2018",
+    "airDate": "09-24-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1765,7 +1765,7 @@
     "episodeId": 101,
     "title": "Wiedersehen",
     "season": "4",
-    "air_date": "10-01-2018",
+    "airDate": "10-01-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
@@ -1781,7 +1781,7 @@
     "episodeId": 102,
     "title": "Winner",
     "season": "4",
-    "air_date": "10-08-2018",
+    "airDate": "10-08-2018",
     "characters": [
       "Jimmy McGill",
       "Mike Erhmantraut",
