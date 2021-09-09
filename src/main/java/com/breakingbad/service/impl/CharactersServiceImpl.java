@@ -7,6 +7,7 @@ import com.breakingbad.service.CharactersService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
@@ -22,11 +23,11 @@ public class CharactersServiceImpl implements CharactersService {
     private final CharactersRepository charactersRepository;
     private final ObjectMapper objectMapper;
     private final ResourceLoader resourceLoader;
+    private final ModelMapper modelMapper;
 
     @Override
     public List<CharactersDto> getAllCharacters() {
-        List<Characters> charactersList = charactersRepository.findAll();
-        return charactersList.stream().map(this::mapFromCharactersToDto).collect(Collectors.toList());
+        return this.mapToCharactersDtoList(charactersRepository.findAll());
     }
 
     @Override
@@ -56,18 +57,12 @@ public class CharactersServiceImpl implements CharactersService {
         }
     }
 
-    private CharactersDto mapFromCharactersToDto(Characters characters) {
-        CharactersDto charactersDto = new CharactersDto();
-        charactersDto.setCharacterId(characters.getCharacterId());
-        charactersDto.setName(characters.getName());
-        charactersDto.setBirthday(characters.getBirthday());
-        charactersDto.setOccupation(characters.getOccupation());
-        charactersDto.setImage(characters.getImage());
-        charactersDto.setNickname(characters.getNickname());
-        charactersDto.setAppearance(characters.getAppearance());
-        charactersDto.setPortrayed(characters.getPortrayed());
-
-        return charactersDto;
-
+    private List<CharactersDto> mapToCharactersDtoList(List<Characters> data) {
+        return data.stream().map(this::mapToCharactersDto).collect(Collectors.toList());
     }
+
+    private CharactersDto mapToCharactersDto(Characters data) {
+        return this.modelMapper.map(data, CharactersDto.class);
+    }
+
 }

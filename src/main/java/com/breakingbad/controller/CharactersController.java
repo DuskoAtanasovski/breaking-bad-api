@@ -19,7 +19,7 @@ public class CharactersController {
     private final CharactersService charactersService;
 
     @GetMapping("characters/all")
-    public List<CharactersDto> getAll() {
+    public List<CharactersDto> getAllCharacters() {
         return charactersService.getAllCharacters();
     }
 
