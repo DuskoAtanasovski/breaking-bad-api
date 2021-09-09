@@ -19,7 +19,7 @@ public class DeathsController {
     private final DeathsService deathsService;
 
     @GetMapping("deaths/all")
-    public List<DeathsDto> getAll() {
+    public List<DeathsDto> getAllDeaths() {
         return deathsService.getAllDeaths();
     }
 

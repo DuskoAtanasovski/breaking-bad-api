@@ -7,6 +7,7 @@ import com.breakingbad.service.DeathsService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
@@ -20,11 +21,11 @@ public class DeathsServiceImpl implements DeathsService {
     private final DeathsRepository deathsRepository;
     private final ObjectMapper objectMapper;
     private final ResourceLoader resourceLoader;
+    private final ModelMapper modelMapper;
 
     @Override
     public List<DeathsDto> getAllDeaths() {
-        List<Deaths> deathsList = deathsRepository.findAll();
-        return deathsList.stream().map(this::mapFromDeathsToDto).collect(Collectors.toList());
+        return this.mapToDeathsDtoList(deathsRepository.findAll());
     }
 
     @Override
@@ -49,18 +50,12 @@ public class DeathsServiceImpl implements DeathsService {
         }
     }
 
-    private DeathsDto mapFromDeathsToDto(Deaths deaths) {
-        DeathsDto deathsDto = new DeathsDto();
-        deathsDto.setDeathId(deaths.getDeathId());
-        deathsDto.setDeath(deaths.getDeath());
-        deathsDto.setCause(deaths.getCause());
-        deathsDto.setResponsible(deaths.getResponsible());
-        deathsDto.setLastWords(deaths.getLastWords());
-        deathsDto.setSeason(deaths.getSeason());
-        deathsDto.setEpisode(deaths.getEpisode());
-        deathsDto.setNumberOfDeaths(deaths.getNumberOfDeaths());
-
-
-        return deathsDto;
+    private List<DeathsDto> mapToDeathsDtoList(List<Deaths> data) {
+        return data.stream().map(this::mapToDeathsDto).collect(Collectors.toList());
     }
+
+    private DeathsDto mapToDeathsDto(Deaths data) {
+        return this.modelMapper.map(data, DeathsDto.class);
+    }
+
 }
