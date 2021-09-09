@@ -4,6 +4,7 @@ import com.breakingbad.dto.CharactersDto;
 import com.breakingbad.dto.DeathsDto;
 import com.breakingbad.dto.EpisodesDto;
 import com.breakingbad.dto.QuotesDto;
+import com.breakingbad.exception.RecordNotFoundException;
 import com.breakingbad.model.Characters;
 import com.breakingbad.model.Deaths;
 import com.breakingbad.model.Episodes;
@@ -40,11 +41,6 @@ public class SourceServiceImpl implements SourceService {
     }
 
     @Override
-    public Optional<CharactersDto> getByCharacterId(Long characterId) {
-        return Optional.empty();
-    }
-
-    @Override
     public List<DeathsDto> getAllDeaths() {
         return this.mapToDeathsDtoList(deathsRepository.findAll());
     }
@@ -55,18 +51,35 @@ public class SourceServiceImpl implements SourceService {
     }
 
     @Override
-    public Optional<EpisodesDto> getByEpisodeId(Long episodeId) {
-        return Optional.empty();
-    }
-
-    @Override
     public List<QuotesDto> getAllQuotes() {
         return this.mapToQuotesDtoList(quotesRepository.findAll());
     }
 
     @Override
-    public Optional<QuotesDto> getByQuoteId(Long quoteId) {
-        return Optional.empty();
+    public CharactersDto getByCharacterId(Long characterId) {
+        Optional<Characters> charactersOptional = charactersRepository.findById(characterId);
+        if (charactersOptional.isEmpty()) {
+            throw new RecordNotFoundException("character with id: " + characterId + " does not exist");
+        }
+        return mapToCharactersDto(charactersOptional.get());
+    }
+
+    @Override
+    public EpisodesDto getByEpisodeId(Long episodeId) {
+        Optional<Episodes> episodesOptional = episodesRepository.findById(episodeId);
+        if (episodesOptional.isEmpty()) {
+            throw new RecordNotFoundException("episode with id: " + episodeId + " does not exist");
+        }
+        return mapToEpisodesDto(episodesOptional.get());
+    }
+
+    @Override
+    public QuotesDto getByQuoteId(Long quoteId) {
+        Optional<Quotes> quotesOptional = quotesRepository.findById(quoteId);
+        if (quotesOptional.isEmpty()) {
+            throw new RecordNotFoundException("quote with id: " + quoteId + " does not exist");
+        }
+        return mapToQuotesDto(quotesOptional.get());
     }
 
     private List<CharactersDto> mapToCharactersDtoList(List<Characters> data) {
@@ -75,6 +88,14 @@ public class SourceServiceImpl implements SourceService {
 
     private CharactersDto mapToCharactersDto(Characters data) {
         return this.modelMapper.map(data, CharactersDto.class);
+    }
+
+    private CharactersDto getCharacterById(Long characterId) {
+        Optional<Characters> charactersOptional = charactersRepository.findById(characterId);
+        if (charactersOptional.isEmpty()) {
+            throw new RecordNotFoundException("character with " + characterId + " does not exist");
+        }
+        return mapToCharactersDto(charactersOptional.get());
     }
 
     private List<DeathsDto> mapToDeathsDtoList(List<Deaths> data) {

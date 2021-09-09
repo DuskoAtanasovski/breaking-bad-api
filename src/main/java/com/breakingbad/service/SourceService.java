@@ -12,15 +12,15 @@ public interface SourceService {
 
     List<CharactersDto> getAllCharacters();
 
-    Optional<CharactersDto> getByCharacterId(Long characterId);
-
     List<DeathsDto> getAllDeaths();
 
     List<EpisodesDto> getAllEpisodes();
 
-    Optional<EpisodesDto> getByEpisodeId(Long episodeId);
-
     List<QuotesDto> getAllQuotes();
 
-    Optional<QuotesDto> getByQuoteId(Long quoteId);
+    CharactersDto getByCharacterId(Long characterId);
+
+    EpisodesDto getByEpisodeId(Long episodeId);
+
+    QuotesDto getByQuoteId(Long quoteId);
 }

@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -47,6 +48,21 @@ public class SourceController {
     @GetMapping("quotes/all")
     public List<QuotesDto> getAllQuotes() {
         return sourceService.getAllQuotes();
+    }
+
+    @GetMapping("characters/{characterId}")
+    public CharactersDto getCharacterById(@PathVariable Long characterId) {
+        return sourceService.getByCharacterId(characterId);
+    }
+
+    @GetMapping("episodes/{episodeId}")
+    public EpisodesDto getEpisodeById(@PathVariable Long episodeId) {
+        return sourceService.getByEpisodeId(episodeId);
+    }
+
+    @GetMapping("quotes/{quoteId}")
+    public QuotesDto getQuoteById(@PathVariable Long quoteId) {
+        return sourceService.getByQuoteId(quoteId);
     }
 
 }
