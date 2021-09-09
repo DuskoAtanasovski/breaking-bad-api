@@ -19,7 +19,7 @@ public class EpisodesController {
     private final EpisodesService episodesService;
 
     @GetMapping("episodes/all")
-    public List<EpisodesDto> getAll() {
+    public List<EpisodesDto> getAllEpisodes() {
         return episodesService.getAllEpisodes();
     }
 

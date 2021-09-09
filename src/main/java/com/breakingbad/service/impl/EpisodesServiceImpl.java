@@ -7,6 +7,7 @@ import com.breakingbad.service.EpisodesService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +22,11 @@ public class EpisodesServiceImpl implements EpisodesService {
     private final EpisodesRepository episodesRepository;
     private final ObjectMapper objectMapper;
     private final ResourceLoader resourceLoader;
+    private final ModelMapper modelMapper;
 
     @Override
     public List<EpisodesDto> getAllEpisodes() {
-        List<Episodes> episodesList = episodesRepository.findAll();
-        return episodesList.stream().map(this::mapFromEpisodesToDto).collect(Collectors.toList());
+        return this.mapToEpisodesDtoList(episodesRepository.findAll());
     }
 
     @Override
@@ -54,16 +55,13 @@ public class EpisodesServiceImpl implements EpisodesService {
         }
     }
 
-    private EpisodesDto mapFromEpisodesToDto(Episodes episodes) {
-        EpisodesDto episodesDto = new EpisodesDto();
-        episodesDto.setEpisodeId(episodes.getEpisodeId());
-        episodesDto.setTitle(episodes.getTitle());
-        episodesDto.setSeason(episodes.getSeason());
-        episodesDto.setAirDate(episodes.getAirDate());
-        episodesDto.setCharacters(episodes.getCharacters());
-        episodesDto.setEpisode(episodes.getEpisode());
-        episodesDto.setSeries(episodes.getSeries());
-
-        return episodesDto;
+    private List<EpisodesDto> mapToEpisodesDtoList(List<Episodes> data) {
+        return data.stream().map(this::mapToEpisodesDto).collect(Collectors.toList());
     }
+
+    private EpisodesDto mapToEpisodesDto(Episodes data) {
+        return this.modelMapper.map(data, EpisodesDto.class);
+    }
+
+
 }

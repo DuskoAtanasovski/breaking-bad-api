@@ -19,7 +19,7 @@ public class QuotesController {
     private final QuotesService quotesService;
 
     @GetMapping("quotes/all")
-    public List<QuotesDto> getAll() {
+    public List<QuotesDto> getAllQuotes() {
         return quotesService.getAllQuotes();
     }
 

@@ -7,6 +7,7 @@ import com.breakingbad.service.QuotesService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +22,11 @@ public class QuotesServiceImpl implements QuotesService {
     private final QuotesRepository quotesRepository;
     private final ObjectMapper objectMapper;
     private final ResourceLoader resourceLoader;
+    private final ModelMapper modelMapper;
 
     @Override
     public List<QuotesDto> getAllQuotes() {
-        List<Quotes> quotesList = quotesRepository.findAll();
-        return quotesList.stream().map(this::mapFromQuotesToDto).collect(Collectors.toList());
+        return this.mapToQuotesDtoList(quotesRepository.findAll());
     }
 
     @Override
@@ -51,13 +52,12 @@ public class QuotesServiceImpl implements QuotesService {
         }
     }
 
-    private QuotesDto mapFromQuotesToDto(Quotes quotes) {
-        QuotesDto quotesDto = new QuotesDto();
-        quotesDto.setQuoteId(quotes.getQuoteId());
-        quotesDto.setQuote(quotes.getQuote());
-        quotesDto.setAuthor(quotes.getAuthor());
-        quotesDto.setSeries(quotes.getSeries());
-
-        return quotesDto;
+    private List<QuotesDto> mapToQuotesDtoList(List<Quotes> data) {
+        return data.stream().map(this::mapToQuotesDto).collect(Collectors.toList());
     }
+
+    private QuotesDto mapToQuotesDto(Quotes data) {
+        return this.modelMapper.map(data, QuotesDto.class);
+    }
+
 }
