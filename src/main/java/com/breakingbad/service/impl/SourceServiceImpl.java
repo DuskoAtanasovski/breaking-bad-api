@@ -14,10 +14,8 @@ import com.breakingbad.repository.DeathsRepository;
 import com.breakingbad.repository.EpisodesRepository;
 import com.breakingbad.repository.QuotesRepository;
 import com.breakingbad.service.SourceService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
