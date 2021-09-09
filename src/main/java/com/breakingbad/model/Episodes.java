@@ -15,7 +15,7 @@ public class Episodes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(unique = true)
     private Long episodeId;
     private String title;
     private Integer season;

@@ -15,7 +15,7 @@ public class Quotes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(unique = true)
     private Long quoteId;
     private String quote;
     private String author;

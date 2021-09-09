@@ -15,7 +15,7 @@ public class Deaths {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(unique = true)
     private Long deathId;
     private String death;
     private String cause;
