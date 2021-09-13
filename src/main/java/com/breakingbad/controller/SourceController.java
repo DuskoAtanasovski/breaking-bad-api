@@ -55,6 +55,11 @@ public class SourceController {
         return sourceService.getByCharacterId(characterId);
     }
 
+    @GetMapping("character/{name}")
+    public CharactersDto getCharacterByName(@PathVariable String name) {
+        return sourceService.getCharacterByName(name);
+    }
+
     @GetMapping("episodes/{episodeId}")
     public EpisodesDto getEpisodeById(@PathVariable Long episodeId) {
         return sourceService.getByEpisodeId(episodeId);

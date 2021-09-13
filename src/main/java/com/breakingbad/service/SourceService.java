@@ -20,6 +20,8 @@ public interface SourceService {
 
     CharactersDto getByCharacterId(Long characterId);
 
+    CharactersDto getCharacterByName(String name);
+
     EpisodesDto getByEpisodeId(Long episodeId);
 
     QuotesDto getByQuoteId(Long quoteId);
