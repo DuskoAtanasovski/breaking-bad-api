@@ -60,6 +60,11 @@ public class SourceController {
         return sourceService.getCharacterByName(name);
     }
 
+    @GetMapping("character/random")
+    public CharactersDto getRandomCharacter() {
+        return sourceService.getRandomCharacter();
+    }
+
     @GetMapping("episodes/{episodeId}")
     public EpisodesDto getEpisodeById(@PathVariable Long episodeId) {
         return sourceService.getByEpisodeId(episodeId);

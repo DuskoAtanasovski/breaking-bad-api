@@ -22,6 +22,8 @@ public interface SourceService {
 
     CharactersDto getCharacterByName(String name);
 
+    CharactersDto getRandomCharacter();
+
     EpisodesDto getByEpisodeId(Long episodeId);
 
     QuotesDto getByQuoteId(Long quoteId);

@@ -16,13 +16,12 @@ import com.breakingbad.repository.QuotesRepository;
 import com.breakingbad.service.SourceService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.regex.Matcher;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 @Service
@@ -72,6 +71,14 @@ public class SourceServiceImpl implements SourceService {
             throw new RecordNotFoundException("character: " + name + " does not exist");
         }
         return mapToCharactersDto(charactersOptional.get());
+    }
+
+    @Override
+    public CharactersDto getRandomCharacter() {
+        List<Characters> charactersList = charactersRepository.findAll();
+        int index = (int) (Math.random() * charactersList.size());
+        Characters randomCharacter = charactersList.get(index);
+        return mapToCharactersDto(randomCharacter);
     }
 
     @Override
