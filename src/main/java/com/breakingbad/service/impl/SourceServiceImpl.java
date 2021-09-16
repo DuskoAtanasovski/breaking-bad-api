@@ -74,8 +74,8 @@ public class SourceServiceImpl implements SourceService {
     @Override
     public CharactersDto getRandomCharacter() {
         List<Characters> charactersList = charactersRepository.findAll();
-        int index = (int) (Math.random() * charactersList.size());
-        Characters randomCharacter = charactersList.get(index);
+        int random = (int) (Math.random() * charactersList.size());
+        Characters randomCharacter = charactersList.get(random);
         return mapToCharactersDto(randomCharacter);
     }
 
@@ -89,12 +89,28 @@ public class SourceServiceImpl implements SourceService {
     }
 
     @Override
+    public EpisodesDto getRandomEpisode() {
+        List<Episodes> episodesList = episodesRepository.findAll();
+        int random = (int) (Math.random() * episodesList.size());
+        Episodes randomEpisode = episodesList.get(random);
+        return mapToEpisodesDto(randomEpisode);
+    }
+
+    @Override
     public QuotesDto getByQuoteId(Long quoteId) {
         Optional<Quotes> quotesOptional = quotesRepository.findById(quoteId);
         if (quotesOptional.isEmpty()) {
             throw new RecordNotFoundException("quote with id:" + quoteId + " does not exist");
         }
         return mapToQuotesDto(quotesOptional.get());
+    }
+
+    @Override
+    public QuotesDto getRandomQuote() {
+        List<Quotes> quotesList = quotesRepository.findAll();
+        int random = (int) (Math.random() * quotesList.size());
+        Quotes randomQuote = quotesList.get(random);
+        return mapToQuotesDto(randomQuote);
     }
 
     private List<CharactersDto> mapToCharactersDtoList(List<Characters> data) {

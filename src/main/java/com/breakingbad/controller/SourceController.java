@@ -70,9 +70,19 @@ public class SourceController {
         return sourceService.getByEpisodeId(episodeId);
     }
 
+    @GetMapping("episode/random")
+    public EpisodesDto getRandomEpisode() {
+        return sourceService.getRandomEpisode();
+    }
+
     @GetMapping("quotes/{quoteId}")
     public QuotesDto getQuoteById(@PathVariable Long quoteId) {
         return sourceService.getByQuoteId(quoteId);
+    }
+
+    @GetMapping("quote/random")
+    public QuotesDto getRandomQuote() {
+        return sourceService.getRandomQuote();
     }
 
 }

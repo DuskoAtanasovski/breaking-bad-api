@@ -26,5 +26,9 @@ public interface SourceService {
 
     EpisodesDto getByEpisodeId(Long episodeId);
 
+    EpisodesDto getRandomEpisode();
+
     QuotesDto getByQuoteId(Long quoteId);
+
+    QuotesDto getRandomQuote();
 }
