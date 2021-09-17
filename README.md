@@ -1,4 +1,4 @@
-# Simple Employee Web App
+# Breaking Bad API
 
 ## Built with
 * 	[Maven](https://maven.apache.org/) - Dependency Management.
