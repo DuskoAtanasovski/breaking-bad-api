@@ -46,7 +46,7 @@ Base Url: https://breakingbadapi.com/documentation
 ## Demo
 
 After you start the application the server will listen on port 8080
-````
+
 - Get all characters <br />
 HTTP GET localhost:8080/characters/all
 
@@ -89,4 +89,3 @@ HTTP GET localhost:8080/characters/all
 
 - Get random quote <br />
   HTTP GET localhost:8080/quote/random
-````
