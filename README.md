@@ -9,7 +9,7 @@
 * 	[Lombok](https://projectlombok.org/) - Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more.
 ## External Tools Used
 
-* [Postman](https://www.getpostman.com/) - API Development Environment (Testing Docmentation)
+* [Postman](https://www.getpostman.com/) - API Development Environment (Testing Documentation)
 
 ## Running the application locally
 
@@ -22,7 +22,7 @@ There are several ways to run a Spring Boot application on your local machine. O
     - File -> Import -> Navigate to the folder where you unzipped the zip
     - Select the project
 - Choose the Spring Boot Application file (search for @SpringBootApplication)
-- Right Click on the file and Run as Java Application
+- Right-Click on the file and Run as Java Application
 
 Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
 
