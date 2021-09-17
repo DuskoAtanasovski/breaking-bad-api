@@ -32,7 +32,7 @@ public class Runner implements CommandLineRunner {
         saveDeaths();
         saveEpisodes();
         saveQuotes();
-        log.info("Successfully saved in db");
+        log.info("successfully saved in db");
     }
 
     private final ObjectMapper objectMapper;
