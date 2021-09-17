@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class BreakingBadApiApplication {
+public class Application {
 
     @Bean
     public ModelMapper getModelMapper() {
@@ -20,7 +20,7 @@ public class BreakingBadApiApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(BreakingBadApiApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
