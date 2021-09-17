@@ -27,7 +27,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class Runner implements CommandLineRunner {
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) throws RuntimeException {
         saveCharacters();
         saveDeaths();
         saveEpisodes();
