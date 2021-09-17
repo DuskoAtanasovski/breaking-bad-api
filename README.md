@@ -64,7 +64,7 @@ HTTP GET localhost:8080/characters/all
 
 
 - Get character by id <br />
-  HTTP GET localhost:8080/character/{id}
+  HTTP GET localhost:8080/character/{characterId}
 
 
 - Get character by name <br />
@@ -76,7 +76,7 @@ HTTP GET localhost:8080/characters/all
 
 
 - Get episode by id <br />
-  HTTP GET localhost:8080/episode/{id}
+  HTTP GET localhost:8080/episode/{episodeId}
 
 
 - Get random episode <br />
@@ -84,7 +84,7 @@ HTTP GET localhost:8080/characters/all
 
 
 - Get quote by id <br />
-  HTTP GET localhost:8080/quote/{id}
+  HTTP GET localhost:8080/quote/{quoteId}
 
 
 - Get random quote <br />
