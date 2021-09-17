@@ -113,6 +113,14 @@ public class SourceServiceImpl implements SourceService {
         return mapToQuotesDto(randomQuote);
     }
 
+    @Override
+    public DeathsDto getRandomDeath() {
+        List<Deaths> deathsList = deathsRepository.findAll();
+        int random = (int) (Math.random() * deathsList.size());
+        Deaths randomDeath = deathsList.get(random);
+        return mapToDeathsDto(randomDeath);
+    }
+
     private List<CharactersDto> mapToCharactersDtoList(List<Characters> data) {
         return data.stream().map(this::mapToCharactersDto).collect(Collectors.toList());
     }

@@ -89,3 +89,7 @@ HTTP GET localhost:8080/characters/all
 
 - Get random quote <br />
   HTTP GET localhost:8080/quote/random
+
+
+- Get random death <br />
+  HTTP GET localhost:8080/death/random

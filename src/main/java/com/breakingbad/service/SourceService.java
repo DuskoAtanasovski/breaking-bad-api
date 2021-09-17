@@ -30,4 +30,6 @@ public interface SourceService {
     QuotesDto getByQuoteId(Long quoteId);
 
     QuotesDto getRandomQuote();
+
+    DeathsDto getRandomDeath();
 }

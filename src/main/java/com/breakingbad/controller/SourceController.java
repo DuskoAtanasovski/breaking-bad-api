@@ -75,4 +75,9 @@ public class SourceController {
         return sourceService.getRandomQuote();
     }
 
+    @GetMapping("death/random")
+    public DeathsDto getRandomDeath() {
+        return sourceService.getRandomDeath();
+    }
+
 }
