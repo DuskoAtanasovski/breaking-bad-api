@@ -57,7 +57,7 @@ public class SourceServiceImpl implements SourceService {
     public CharactersDto getByCharacterId(Long characterId) {
         Optional<Characters> charactersOptional = charactersRepository.findById(characterId);
         if (charactersOptional.isEmpty()) {
-            throw new RecordNotFoundException("character with id:" + characterId + " does not exist");
+            throw new RecordNotFoundException("character with id: " + characterId + " does not exist");
         }
         return mapToCharactersDto(charactersOptional.get());
     }
@@ -83,7 +83,7 @@ public class SourceServiceImpl implements SourceService {
     public EpisodesDto getByEpisodeId(Long episodeId) {
         Optional<Episodes> episodesOptional = episodesRepository.findById(episodeId);
         if (episodesOptional.isEmpty()) {
-            throw new RecordNotFoundException("episode with id:" + episodeId + " does not exist");
+            throw new RecordNotFoundException("episode with id: " + episodeId + " does not exist");
         }
         return mapToEpisodesDto(episodesOptional.get());
     }
@@ -100,7 +100,7 @@ public class SourceServiceImpl implements SourceService {
     public QuotesDto getByQuoteId(Long quoteId) {
         Optional<Quotes> quotesOptional = quotesRepository.findById(quoteId);
         if (quotesOptional.isEmpty()) {
-            throw new RecordNotFoundException("quote with id:" + quoteId + " does not exist");
+            throw new RecordNotFoundException("quote with id: " + quoteId + " does not exist");
         }
         return mapToQuotesDto(quotesOptional.get());
     }
