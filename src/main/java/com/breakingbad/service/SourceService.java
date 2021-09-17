@@ -6,7 +6,6 @@ import com.breakingbad.dto.EpisodesDto;
 import com.breakingbad.dto.QuotesDto;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface SourceService {
 

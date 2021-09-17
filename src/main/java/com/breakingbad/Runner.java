@@ -1,4 +1,4 @@
-package com.breakingbad.service.impl;
+package com.breakingbad;
 
 import com.breakingbad.dto.CharactersDto;
 import com.breakingbad.dto.DeathsDto;
@@ -12,18 +12,28 @@ import com.breakingbad.repository.CharactersRepository;
 import com.breakingbad.repository.DeathsRepository;
 import com.breakingbad.repository.EpisodesRepository;
 import com.breakingbad.repository.QuotesRepository;
-import com.breakingbad.service.SaveSourceService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.ResourceLoader;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Service
+@Slf4j
+@Component
 @RequiredArgsConstructor
-public class SaveSourceServiceImpl implements SaveSourceService {
+public class Runner implements CommandLineRunner {
+    @Override
+    public void run(String... args) throws Exception {
+        saveCharacters();
+        saveDeaths();
+        saveEpisodes();
+        saveQuotes();
+        log.info("Successfully saved in db");
+    }
 
     private final ObjectMapper objectMapper;
     private final ResourceLoader resourceLoader;
@@ -33,13 +43,6 @@ public class SaveSourceServiceImpl implements SaveSourceService {
     private final EpisodesRepository episodesRepository;
     private final QuotesRepository quotesRepository;
 
-    @Override
-    public void saveAllSources() {
-        saveCharacters();
-        saveDeaths();
-        saveEpisodes();
-        saveQuotes();
-    }
 
     private void saveCharacters() {
         try {
@@ -120,3 +123,4 @@ public class SaveSourceServiceImpl implements SaveSourceService {
         }
     }
 }
+
