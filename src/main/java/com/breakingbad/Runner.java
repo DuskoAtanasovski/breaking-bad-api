@@ -17,9 +17,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
+import java.net.URL;
 import java.util.List;
 
 @Slf4j
@@ -36,7 +36,6 @@ public class Runner implements CommandLineRunner {
     }
 
     private final ObjectMapper objectMapper;
-    private final ResourceLoader resourceLoader;
 
     private final CharactersRepository charactersRepository;
     private final DeathsRepository deathsRepository;
@@ -46,7 +45,7 @@ public class Runner implements CommandLineRunner {
 
     private void saveCharacters() {
         try {
-            List<CharactersDto> charactersDtoList = objectMapper.readValue(resourceLoader.getResource("classpath:sources/characters.json").getInputStream(), new TypeReference<List<CharactersDto>>() {
+            List<CharactersDto> charactersDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/characters"), new TypeReference<List<CharactersDto>>() {
             });
             for (CharactersDto charactersDto : charactersDtoList) {
                 Characters characters = new Characters();
@@ -67,7 +66,7 @@ public class Runner implements CommandLineRunner {
 
     private void saveDeaths() {
         try {
-            List<DeathsDto> deathsDtoList = objectMapper.readValue(resourceLoader.getResource("classpath:sources/deaths.json").getInputStream(), new TypeReference<List<DeathsDto>>() {
+            List<DeathsDto> deathsDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/deaths"), new TypeReference<List<DeathsDto>>() {
             });
             for (DeathsDto deathsDto : deathsDtoList) {
                 Deaths deaths = new Deaths();
@@ -82,13 +81,13 @@ public class Runner implements CommandLineRunner {
                 deathsRepository.save(deaths);
             }
         } catch (Exception e) {
-
+            throw new RuntimeException(e);
         }
     }
 
     private void saveEpisodes() {
         try {
-            List<EpisodesDto> episodesDtoList = objectMapper.readValue(resourceLoader.getResource("classpath:sources/episodes.json").getInputStream(), new TypeReference<List<EpisodesDto>>() {
+            List<EpisodesDto> episodesDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/episodes"), new TypeReference<List<EpisodesDto>>() {
             });
             for (EpisodesDto episodesDto : episodesDtoList) {
                 Episodes episodes = new Episodes();
@@ -102,13 +101,13 @@ public class Runner implements CommandLineRunner {
                 episodesRepository.save(episodes);
             }
         } catch (Exception e) {
-
+            throw new RuntimeException(e);
         }
     }
 
     private void saveQuotes() {
         try {
-            List<QuotesDto> quotesDtoList = objectMapper.readValue(resourceLoader.getResource("classpath:sources/quotes.json").getInputStream(), new TypeReference<List<QuotesDto>>() {
+            List<QuotesDto> quotesDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/quotes"), new TypeReference<List<QuotesDto>>() {
             });
             for (QuotesDto quotesDto : quotesDtoList) {
                 Quotes quotes = new Quotes();
@@ -119,7 +118,7 @@ public class Runner implements CommandLineRunner {
                 quotesRepository.save(quotes);
             }
         } catch (Exception e) {
-
+            throw new RuntimeException(e);
         }
     }
 }
