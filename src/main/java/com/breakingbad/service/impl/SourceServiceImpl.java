@@ -53,6 +53,7 @@ public class SourceServiceImpl implements SourceService {
         return this.mapToQuotesDtoList(quotesRepository.findAll());
     }
 
+    //returns one character when you type specific characterId if that id does not exist returns RecordNotFoundException
     @Override
     public CharactersDto getByCharacterId(Long characterId) {
         Optional<Characters> charactersOptional = charactersRepository.findById(characterId);
@@ -62,6 +63,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToCharactersDto(charactersOptional.get());
     }
 
+    //returns one character when you type specific character name if that name does not exist returns RecordNotFoundException
     @Override
     public CharactersDto getCharacterByName(String name) {
         Optional<Characters> charactersOptional = charactersRepository.findByName(name);
@@ -71,6 +73,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToCharactersDto(charactersOptional.get());
     }
 
+    //returns one random character record
     @Override
     public CharactersDto getRandomCharacter() {
         List<Characters> charactersList = charactersRepository.findAll();
@@ -79,6 +82,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToCharactersDto(randomCharacter);
     }
 
+    //returns one character when you type specific episodeId if that id does not exist returns RecordNotFoundException
     @Override
     public EpisodesDto getByEpisodeId(Long episodeId) {
         Optional<Episodes> episodesOptional = episodesRepository.findById(episodeId);
@@ -88,6 +92,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToEpisodesDto(episodesOptional.get());
     }
 
+    //returns one random episode record
     @Override
     public EpisodesDto getRandomEpisode() {
         List<Episodes> episodesList = episodesRepository.findAll();
@@ -96,6 +101,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToEpisodesDto(randomEpisode);
     }
 
+    //returns one character when you type specific quoteId if that id does not exist returns RecordNotFoundException
     @Override
     public QuotesDto getByQuoteId(Long quoteId) {
         Optional<Quotes> quotesOptional = quotesRepository.findById(quoteId);
@@ -105,6 +111,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToQuotesDto(quotesOptional.get());
     }
 
+    //returns one random qoute record
     @Override
     public QuotesDto getRandomQuote() {
         List<Quotes> quotesList = quotesRepository.findAll();
@@ -113,6 +120,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToQuotesDto(randomQuote);
     }
 
+    //returns one random death record
     @Override
     public DeathsDto getRandomDeath() {
         List<Deaths> deathsList = deathsRepository.findAll();

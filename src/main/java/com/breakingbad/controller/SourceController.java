@@ -20,21 +20,25 @@ public class SourceController {
 
     private final SourceService sourceService;
 
+    //return list of all characters
     @GetMapping("characters/all")
     public List<CharactersDto> getAllCharacters() {
         return sourceService.getAllCharacters();
     }
 
+    // return list of all deaths
     @GetMapping("deaths/all")
     public List<DeathsDto> getAllDeaths() {
         return sourceService.getAllDeaths();
     }
 
+    //return list of all episodes
     @GetMapping("episodes/all")
     public List<EpisodesDto> getAllEpisodes() {
         return sourceService.getAllEpisodes();
     }
 
+    // return list of all quotes
     @GetMapping("quotes/all")
     public List<QuotesDto> getAllQuotes() {
         return sourceService.getAllQuotes();

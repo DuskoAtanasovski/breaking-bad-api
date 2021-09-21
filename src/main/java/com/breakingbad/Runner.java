@@ -43,6 +43,7 @@ public class Runner implements CommandLineRunner {
     private final QuotesRepository quotesRepository;
 
 
+    // saving characters json data to db
     private void saveCharacters() {
         try {
             List<CharactersDto> charactersDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/characters"), new TypeReference<List<CharactersDto>>() {
@@ -64,6 +65,7 @@ public class Runner implements CommandLineRunner {
         }
     }
 
+    // saving deaths json data to db
     private void saveDeaths() {
         try {
             List<DeathsDto> deathsDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/deaths"), new TypeReference<List<DeathsDto>>() {
@@ -85,6 +87,7 @@ public class Runner implements CommandLineRunner {
         }
     }
 
+    // saving episodes json data to db
     private void saveEpisodes() {
         try {
             List<EpisodesDto> episodesDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/episodes"), new TypeReference<List<EpisodesDto>>() {
@@ -105,6 +108,7 @@ public class Runner implements CommandLineRunner {
         }
     }
 
+    // saving quotes json data to db
     private void saveQuotes() {
         try {
             List<QuotesDto> quotesDtoList = objectMapper.readValue(new URL("https://www.breakingbadapi.com/api/quotes"), new TypeReference<List<QuotesDto>>() {
