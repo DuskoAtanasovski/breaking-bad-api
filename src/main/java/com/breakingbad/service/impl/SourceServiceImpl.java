@@ -111,7 +111,7 @@ public class SourceServiceImpl implements SourceService {
         return mapToQuotesDto(quotesOptional.get());
     }
 
-    //returns one random qoute record
+    //returns one random quote record
     @Override
     public QuotesDto getRandomQuote() {
         List<Quotes> quotesList = quotesRepository.findAll();
